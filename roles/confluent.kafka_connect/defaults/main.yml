@@ -9,6 +9,9 @@ kafka_connect_service_environment_overrides:
   KAFKA_OPTS: "{{kafka_connect_jolokia_java_arg}}"
 
 kafka_connect_packages:
+  - confluent-common
+  - confluent-control-center
+  - confluent-hub-client
   - confluent-kafka-2.12
   - confluent-kafka-connect-elasticsearch
   - confluent-kafka-connect-jdbc
